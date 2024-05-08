@@ -2,9 +2,14 @@ body {
   background: blue;
 }
 
+h1 {
+  text-align: center;
+}
+
 .maincontain {
-  width: 800px;
+  width: 70%;
+  height: 100vh;
   margin: auto;
   background: grey;
-
 }
+
