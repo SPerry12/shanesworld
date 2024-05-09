@@ -13,3 +13,19 @@ h1 {
   background: grey;
 }
 
+.nav {
+  background-color: grey;
+  text-align: center;
+}
+
+.nav a {
+  text-align: center;
+  padding: 22px;
+  text-decoration: none;
+  font-size: 26px;
+}
+
+.nav a:hover {
+  background-color: black;
+}
+
