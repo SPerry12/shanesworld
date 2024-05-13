@@ -1,31 +1,83 @@
+@font-face {
+  font-family: titleFont;
+  src: url('fonts/good\ times\ rg.otf') format('opentype');
+}
+
 body {
   background: blue;
 }
 
-h1 {
+.title {
+  grid-area: header;
   text-align: center;
+  font-family: titleFont;
+  background-color: lightgray;
+  font-size: 100px;
+  margin-top: 50px;
+  
+  border: solid;
+  border-style: ridge;
+  border-color: lightgray;
+  border-width: 10px;
+}
+
+.title_image {
+  width: 100px;
 }
 
 .maincontain {
   width: 70%;
   height: 100vh;
   margin: auto;
-  background: grey;
+  background: lightgray;
+  border-style: outset;
+  display: grid;
+  grid-template-rows: 200px 90px;
+  grid-template-areas: 
+    "header header header"
+    "nav nav nav"
+    "content content content";
 }
 
 .nav {
-  background-color: grey;
+  grid-area: nav;
   text-align: center;
+  background-color: lightgray;
+  padding: 20px;
+
+  border: solid;
+  border-style: ridge;
+  border-color: lightgray;
+  border-width: 10px;
 }
 
 .nav a {
   text-align: center;
-  padding: 22px;
   text-decoration: none;
+  
   font-size: 26px;
+  margin: 100px;
+  padding: 5px;
+
+  border: solid;
+  border-style: ridge;
+  border-color: lightgray;
+  border-width: 10px;
+
+  
+
+
 }
 
 .nav a:hover {
   background-color: black;
 }
+
+.content {
+  grid-area: content;
+  background-color: lightgray;
+} 
+
+
+
 
