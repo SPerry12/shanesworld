@@ -35,48 +35,83 @@ body {
   grid-template-rows: 200px 90px;
   grid-template-areas: 
     "header header header"
-    "nav nav nav"
+    "content content content"
+    "content content content"
     "content content content";
-}
-
-.nav {
-  grid-area: nav;
-  text-align: center;
-  background-color: lightgray;
-  padding: 20px;
-
-  border: solid;
-  border-style: ridge;
-  border-color: lightgray;
-  border-width: 10px;
-}
-
-.nav a {
-  text-align: center;
-  text-decoration: none;
-  
-  font-size: 26px;
-  margin: 100px;
-  padding: 5px;
-
-  border: solid;
-  border-style: ridge;
-  border-color: lightgray;
-  border-width: 10px;
-
-  
-
-
-}
-
-.nav a:hover {
-  background-color: black;
 }
 
 .content {
   grid-area: content;
   background-color: lightgray;
+
+  display: grid;
+  grid-template-rows: 200px 90px;
+  grid-template-areas: 
+    "news projects projects projects"
+    "news media media media"
+    "talkspace talkspace talkspace talkspace";
+
+  min-height: 0;
+  min-width: 0;
 } 
+
+.news {
+  grid-area: news;
+
+  border: solid;
+  border-style: ridge;
+  border-color: lightgray;
+  border-width: 10px;
+
+  overflow: auto;
+  min-width: 0;
+
+}
+
+.projects {
+  grid-area: projects;
+
+  border: solid;
+  border-style: ridge;
+  border-color: lightgray;
+  border-width: 10px;
+  
+  overflow: auto;
+  min-width: 0;
+}
+
+.media {
+  grid-area: media;
+
+  border: solid;
+  border-style: ridge;
+  border-color: lightgray;
+  border-width: 10px;
+
+  overflow: auto;
+  min-width: 0;
+}
+
+.talkspace {
+  grid-area: talkspace;
+
+  border: solid;
+  border-style: ridge;
+  border-color: lightgray;
+  border-width: 10px;
+
+  overflow: auto;
+  min-width: 0;
+}
+
+.header {
+  font-family: titleFont;
+  margin-left: 10px;
+}
+
+.sub-content {
+  margin: 10px;
+}
 
 
 
